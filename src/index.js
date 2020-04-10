@@ -29,8 +29,12 @@ function challenge2(){
     }
   })
 
-  function makeBreedLi(breed, subbreed){
-    if
+  function makeBreedText(breed, subbreed){
+    if(subbreed){
+      return `${subbreed} ${breed}`
+    } else {
+      return breed
+    }
   }
 }
 
