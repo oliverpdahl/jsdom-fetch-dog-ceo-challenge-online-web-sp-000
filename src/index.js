@@ -22,11 +22,16 @@ fetch('https://dog.ceo/api/breeds/list/all')
   .then(function(json){
     breeds = json.message
     listBreeds(breeds);
+    setBreedsArray();
     challenge3();
   })
 
   function makeBreedText(breed, subbreed){
     return `${subbreed} ${breed}`
+  }
+
+  function setBreedsArray(){
+    doBreedLi = document.getElementsByClassName.('dog-breed-')
   }
 
   function listBreeds(breeds){
@@ -54,6 +59,7 @@ fetch('https://dog.ceo/api/breeds/list/all')
       text = makeBreedText(breed, subbreed);
     }
     li.innerText = text
+    li.class = 'dog-breed-li'
     dogBreedsUl.appendChild(li);
   }
 
