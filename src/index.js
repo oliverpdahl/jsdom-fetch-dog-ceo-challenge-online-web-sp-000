@@ -29,7 +29,7 @@ fetch('https://dog.ceo/api/breeds/list/all')
   }
 
   function setBreedsArray(){
-    dogBreedArray
+    let dogBreedArray = []
     dogBreedLi = document.getElementsByClassName('dog-breed-li')
     for(breedli of dogBreedLi){
       dogBreedArray.push(breedli.innerText)
