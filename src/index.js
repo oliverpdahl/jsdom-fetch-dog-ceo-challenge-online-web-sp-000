@@ -55,6 +55,9 @@ fetch('https://dog.ceo/api/breeds/list/all')
   function listBreedsFromArray(breeds){
     dogBreedsUl.innerHTML = ''
     dogBreedsUl = document.getElementById('dog-breeds')
+    for(breed of breeds){
+      makeBreedLi(breed, '', breeds)
+    }
   }
 
   function makeBreedLi(breed, subbreed, breeds){
