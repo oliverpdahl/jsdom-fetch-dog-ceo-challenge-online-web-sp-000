@@ -21,7 +21,6 @@ function challenge2(){
   .then(function(json){
     dogBreedsUl = document.getElementById('dog-breeds')
     breeds = json.message
-    console.log(breeds)
     for (breed in breeds) {
       if (breeds[breed].length != 0){
         for (subbreed of breeds[breed]){
