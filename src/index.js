@@ -24,7 +24,7 @@ function challenge2(){
     console.log(breeds)
     for (breed in breeds) {
       const li = document.createElement('li')
-      if (breeds[breed]){
+      if (breeds[breed].length != 0){
         for (subbreed of breeds[breed]){
           li.innerText = makeBreedText(breed, subbreed);
         }
