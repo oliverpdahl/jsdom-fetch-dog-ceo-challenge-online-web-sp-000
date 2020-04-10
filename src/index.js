@@ -60,6 +60,13 @@ function challenge3(){
   })
 }
 
+function challenge4(){
+  selector = document.querySelector('select')
+  selector.addEventListener('select', function(event){
+    console.log(event)
+  })
+}
+
 document.addEventListener("DOMContentLoaded", function() {
   challenge1();
   challenge2();
