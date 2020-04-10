@@ -28,22 +28,6 @@ fetch('https://dog.ceo/api/breeds/list/all')
     return `${subbreed} ${breed}`
   }
 
-  // function makeBreedArray(breed, subbreed){
-  //   const li = document.createElement('li')
-  //   li.className = 'dog-breed-li'
-  //   if(breed == 'australian'){
-  //     li.id = 'super-breed'
-  //   }
-  //   if(subbreed != ''){
-  //     text = makeBreedText(breed, subbreed);
-  //   } else {
-  //     text = `${breed}`
-  //   }
-  //   li.innerText = text
-  //   dogBreeds.push(text)
-  //   dogBreedsUl.appendChild(li);
-  // }
-
   function listBreeds(breeds){
     dogBreedsUl = document.getElementById('dog-breeds')
     dogBreeds.innerHTML = ''
