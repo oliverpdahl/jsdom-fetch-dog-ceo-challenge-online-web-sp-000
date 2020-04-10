@@ -56,7 +56,7 @@ function challenge3(){
   let li = document.getElementById('super-breed')
   li.addEventListener('click', function(event){
     console.log('clicked')
-    li.innerText.style.color = "red";
+    li.innerText.style.fontcolor = "red";
   })
 }
 
