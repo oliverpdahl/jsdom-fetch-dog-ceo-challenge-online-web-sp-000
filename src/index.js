@@ -60,9 +60,6 @@ function challenge3(){
   })
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-});
-
 document.addEventListener("DOMContentLoaded", function() {
   challenge1();
   challenge2();
