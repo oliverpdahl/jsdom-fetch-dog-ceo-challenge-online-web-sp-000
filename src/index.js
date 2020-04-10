@@ -25,12 +25,10 @@ function challenge2(){
     for (breed in breeds) {
       if (breeds[breed].length != 0){
         for (subbreed of breeds[breed]){
-
+          makeBreedLi(breed, subbreed)
         }
       } else {
-        const li = document.createElement('li')
-
-        dogBreedsUl.appendChild(li);
+        makeBreedLi(breed, '')
       }
     }
   })
