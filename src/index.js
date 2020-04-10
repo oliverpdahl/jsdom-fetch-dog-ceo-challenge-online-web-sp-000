@@ -50,7 +50,11 @@ function challenge2(){
 }
 
 function challenge3(){
-  list = document.getElementById('dog-breeds')
+  allBreedLi = document.getElementsbyClass('dog-breed-li')
+  chossenLi = allBreedLi[5]
+  chossenLi.addEventListener('click', function(){
+    a
+  })
 }
 
 document.addEventListener("DOMContentLoaded", () => {
