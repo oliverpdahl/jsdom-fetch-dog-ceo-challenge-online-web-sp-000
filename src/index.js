@@ -31,7 +31,8 @@ fetch('https://dog.ceo/api/breeds/list/all')
   }
 
   function setBreedsArray(){
-    doBreedLi = document.getElementsByClassName('dog-breed-li')
+    dogBreedLi = document.getElementsByClassName('dog-breed-li')
+    console.log(dogBreedLi)
   }
 
   function listBreeds(breeds){
