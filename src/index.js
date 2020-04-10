@@ -76,6 +76,7 @@ function challenge4(){
       if(breed[0] === selected){
         newBreedsArray.push(breed)
       }
+      console.log(newBreedsArray)
     }
     listBreeds(newBreedsArray)
   })
