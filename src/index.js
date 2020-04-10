@@ -46,23 +46,34 @@ fetch('https://dog.ceo/api/breeds/list/all')
 
   function listBreeds(breeds){
     dogBreedsUl = document.getElementById('dog-breeds')
+    dogBreeds.innerHTML = ''
     for (breed in breeds) {
       if (breeds[breed].length != 0){
         for (subbreed of breeds[breed]){
-          const li = document.createElement('li')
-          text = makeBreedText(breed, subbreed);
-          li.innerText = text
-          dogBreeds.push(text)
-          dogBreedsUl.appendChild(li);
+
         }
       } else {
         const li = document.createElement('li')
-        text = `${breed}`
+        
         li.innerText = text
         dogBreeds.push(text)
         dogBreedsUl.appendChild(li);
       }
     }
+  }
+
+  function makeBreedLi(breed, subbreed, breeds){
+    const li = document.createElement('li')
+    if(breed == 'australian'){
+      li.id = 'super-breed'
+    }
+    if(subbreed == ''){
+      text = `${breed}`
+    }
+    text = makeBreedText(breed, subbreed);
+    li.innerText = text
+    dogBreeds.push(text)
+    dogBreedsUl.appendChild(li);
   }
 
 function challenge3(){
