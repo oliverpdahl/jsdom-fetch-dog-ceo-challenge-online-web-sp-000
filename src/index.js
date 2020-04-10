@@ -29,7 +29,7 @@ function challenge2(){
           li.innerText = makeBreedText(breed, subbreed);
         }
       } else {
-        li.innerText = breed
+        li.innerText = `${breed}`
       }
       dogBreedsUl.appendChild(li);
     }
