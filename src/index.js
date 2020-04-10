@@ -54,7 +54,7 @@ fetch('https://dog.ceo/api/breeds/list/all')
         }
       } else {
         const li = document.createElement('li')
-        
+
         li.innerText = text
         dogBreeds.push(text)
         dogBreedsUl.appendChild(li);
