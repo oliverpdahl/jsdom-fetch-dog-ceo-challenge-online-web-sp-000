@@ -70,6 +70,10 @@ function challenge4(){
   selector = document.querySelector('select')
   selector.addEventListener('change', function(event){
     selected = event.target.value
+    newBreedsArray = []
+    for (breed of dogBreeds){
+      console.log(breed)
+    }
   })
 }
 
