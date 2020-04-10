@@ -8,7 +8,7 @@ function challenge1(){
     for (const url of json.message){
       img = document.createElement('img')
       img.src = url
-      imageContainer.appendChild(image)
+      imageContainer.appendChild(img)
       console.log(url)
     }
   })
