@@ -72,12 +72,11 @@ function challenge4(){
     selected = event.target.value
     newBreedsArray = []
     for (breed of dogBreeds){
-      console.log(breed[0])
       if(breed[0] === selected){
         newBreedsArray.push(breed)
       }
-      console.log(newBreedsArray)
     }
+    console.log(newBreedsArray)
     listBreeds(newBreedsArray)
   })
 }
