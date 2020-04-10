@@ -47,11 +47,11 @@ function challenge2(){
     }
     if(subbreed != ''){
       text = makeBreedText(breed, subbreed);
-      li.innerText = text
-
     } else {
-      li.innerText = `${breed}`
+      text = `${breed}`
     }
+    li.innerText = text
+    dogBreeds.push(text)
     dogBreedsUl.appendChild(li);
   }
 }
