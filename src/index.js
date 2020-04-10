@@ -50,6 +50,7 @@ function challenge2(){
 
 function challenge3(){
   allBreedLi = document.getElementsByClassName('dog-breed-li')
+  console.log(allBreedLi)
   chossenLi = allBreedLi[5]
   console.log(chossenLi)
   chossenLi.addEventListener('click', function(){
