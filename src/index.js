@@ -62,13 +62,14 @@ function challenge3(){
 
 function challenge4(){
   selector = document.querySelector('select')
-  selector.onchange(function(event){
+  selector.addEventListener('change', function(event){
     console.log('changed')
   })
 }
 
-document.on("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
   challenge1();
   challenge2();
   //challenge3(); CALLED IN challenge2
+  challenge4
 });
