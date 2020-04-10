@@ -52,6 +52,11 @@ fetch('https://dog.ceo/api/breeds/list/all')
     }
   }
 
+  function listBreedsFromArray(breeds){
+    dogBreedsUl.innerHTML = ''
+    dogBreedsUl = document.getElementById('dog-breeds')
+  }
+
   function makeBreedLi(breed, subbreed, breeds){
     const li = document.createElement('li')
     if(breed == 'australian'){
