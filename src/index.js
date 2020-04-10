@@ -19,7 +19,9 @@ function challenge2(){
     return response.json()
   })
   .then(function(json){
-    console.log(json)
+    dogBreedsUl = document.getElementById('dog-breeds')
+    const message = json.message
+    console.log(json.message)
   })
 }
 
