@@ -1,3 +1,5 @@
+let dogBreeds = [];
+
 function challenge1(){
   fetch("https://dog.ceo/api/breeds/image/random/4")
   .then(function(response){
@@ -44,7 +46,9 @@ function challenge2(){
       li.id = 'super-breed'
     }
     if(subbreed != ''){
-      li.innerText = makeBreedText(breed, subbreed);
+      text = makeBreedText(breed, subbreed);
+      li.innerText = text
+      
     } else {
       li.innerText = `${breed}`
     }
