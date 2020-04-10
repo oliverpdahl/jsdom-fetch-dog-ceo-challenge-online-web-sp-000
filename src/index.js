@@ -60,7 +60,7 @@ fetch('https://dog.ceo/api/breeds/list/all')
       text = makeBreedText(breed, subbreed);
     }
     li.innerText = text
-    li.classname = 'dog-breed-li'
+    li.className = 'dog-breed-li'
     dogBreedsUl.appendChild(li);
   }
 
