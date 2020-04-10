@@ -61,11 +61,10 @@ function challenge3(){
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  challenge1();
-  challenge2();
-  challenge3();
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-  console.log("The DOM has loaded");
+  challenge1();
+  challenge2();
+  challenge3();
 });
