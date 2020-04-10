@@ -9,5 +9,5 @@ function challenge1(){
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-
+  challenge1()
 });
