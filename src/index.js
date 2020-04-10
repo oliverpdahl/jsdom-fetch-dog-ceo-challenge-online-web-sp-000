@@ -71,5 +71,5 @@ document.addEventListener("DOMContentLoaded", function() {
   challenge1();
   challenge2();
   //challenge3(); CALLED IN challenge2
-  challenge4
+  challenge4();
 });
