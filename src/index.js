@@ -69,8 +69,9 @@ fetch('https://dog.ceo/api/breeds/list/all')
     }
     if(subbreed == ''){
       text = `${breed}`
+    } else {
+      text = makeBreedText(breed, subbreed);
     }
-    text = makeBreedText(breed, subbreed);
     li.innerText = text
     dogBreeds.push(text)
     dogBreedsUl.appendChild(li);
