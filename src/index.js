@@ -1,9 +1,9 @@
 function challenge1(){
   fetch("https://dog.ceo/api/breeds/image/random/4")
-  .this(function(response){
+  .then(function(response){
     response.json
   })
-  .this(function(json){
+  .then(function(json){
     console.log(json)
   })
 }
