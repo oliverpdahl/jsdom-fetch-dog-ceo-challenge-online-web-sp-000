@@ -53,8 +53,6 @@ fetch('https://dog.ceo/api/breeds/list/all')
     dogBreedsUl.appendChild(li);
   }
 
-}
-
 function challenge3(){
   let li = document.getElementById('super-breed')
   li.addEventListener('click', function(event){
