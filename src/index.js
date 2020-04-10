@@ -54,7 +54,6 @@ function challenge2(){
 
 function challenge3(){
   let li = document.getElementById('super-breed')
-  console.log(li)
   li.addEventListener('click', function(event){
     console.log('clicked')
     chossenLi.style.color = "red";
@@ -64,5 +63,5 @@ function challenge3(){
 document.addEventListener("DOMContentLoaded", function() {
   challenge1();
   challenge2();
-  challenge3();
+  //challenge3(); CALLED IN challenge2
 });
