@@ -52,7 +52,9 @@ function challenge2(){
 function challenge3(){
   allBreedLi = document.getElementsbyClass('dog-breed-li')
   chossenLi = allBreedLi[5]
+  console.log(chossenLi)
   chossenLi.addEventListener('click', function(){
+    console.log('clicked')
     chossenLi.style.color = "red";
   })
 }
