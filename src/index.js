@@ -61,4 +61,5 @@ function challenge3(){
 document.addEventListener("DOMContentLoaded", () => {
   challenge1();
   challenge2();
+  challenge3();
 });
