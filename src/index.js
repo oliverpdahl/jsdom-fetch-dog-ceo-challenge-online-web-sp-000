@@ -93,7 +93,5 @@ function challenge4(){
 document.addEventListener("DOMContentLoaded", function() {
   challenge1();
   //challenge3(); CALLED IN challenge2
-  const dogBreeds = setBreedsArray()
-  console.log(dogBreeds)
   challenge4();
 });
