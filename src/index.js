@@ -4,7 +4,9 @@ function challenge1(){
     return response.json()
   })
   .then(function(json){
-    console.log(json)
+    for (const url of json){
+      console.log(url)
+    }
   })
 }
 
