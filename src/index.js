@@ -48,7 +48,7 @@ function challenge2(){
     if(subbreed != ''){
       text = makeBreedText(breed, subbreed);
       li.innerText = text
-      
+
     } else {
       li.innerText = `${breed}`
     }
