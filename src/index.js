@@ -22,15 +22,6 @@ fetch('https://dog.ceo/api/breeds/list/all')
   .then(function(json){
     dogBreedsUl = document.getElementById('dog-breeds')
     breeds = json.message
-    for (breed in breeds) {
-      if (breeds[breed].length != 0){
-        for (subbreed of breeds[breed]){
-          makeBreedLi(breed, subbreed)
-        }
-      } else {
-        makeBreedLi(breed, '')
-      }
-    }
   })
 
   function makeBreedText(breed, subbreed){
@@ -53,6 +44,10 @@ fetch('https://dog.ceo/api/breeds/list/all')
     dogBreedsUl.appendChild(li);
   }
 
+  function listBreeds(breeds){
+
+  }
+
 function challenge3(){
   let li = document.getElementById('super-breed')
   li.addEventListener('click', function(event){
@@ -70,7 +65,7 @@ function challenge4(){
 
 document.addEventListener("DOMContentLoaded", function() {
   challenge1();
-  challenge2();
+
   //challenge3(); CALLED IN challenge2
   challenge4();
 });
