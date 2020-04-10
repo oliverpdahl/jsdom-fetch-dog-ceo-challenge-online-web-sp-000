@@ -31,7 +31,7 @@ fetch('https://dog.ceo/api/breeds/list/all')
 
   function listBreeds(breeds){
     dogBreedsUl = document.getElementById('dog-breeds')
-    dogBreeds.innerHTML = ''
+    dogBreedsUl.innerHTML = ''
     for (breed in breeds) {
       if (breeds[breed].length != 0){
         for (subbreed of breeds[breed]){
