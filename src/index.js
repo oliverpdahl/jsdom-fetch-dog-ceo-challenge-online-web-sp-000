@@ -73,7 +73,7 @@ function challenge4(){
     newBreedsArray = []
     selected = event.target.value
     for (breed of dogBreeds){
-      if(breed[0] === selected){
+      if(breed.startsWith(selected)){
         newBreedsArray.push(breed)
       }
     }
