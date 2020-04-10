@@ -4,6 +4,7 @@ function challenge1(){
     return response.json()
   })
   .then(function(json){
+    imageContainer = document.getElementById('dog-image-container')
     for (const url of json.message){
       console.log(url)
     }
