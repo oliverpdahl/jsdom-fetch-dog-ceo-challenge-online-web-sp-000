@@ -37,7 +37,7 @@ function challenge2(){
     return `${subbreed} ${breed}`
   }
 
-  make makeBreedLi(breed, subbreed){
+  function makeBreedLi(breed, subbreed){
     const li = document.createElement('li')
     if(subbreed != ''){
       li.innerText = makeBreedText(breed, subbreed);
