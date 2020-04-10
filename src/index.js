@@ -1,4 +1,4 @@
-dogBreeds = []
+let dogBreeds = []
 function challenge1(){
   fetch("https://dog.ceo/api/breeds/image/random/4")
   .then(function(response){
@@ -21,7 +21,7 @@ fetch('https://dog.ceo/api/breeds/list/all')
   .then(function(json){
     breeds = json.message
     listBreeds(breeds);
-    setBreedsArray();
+    dogBreeds = setBreedsArray();
     challenge3();
   })
 
