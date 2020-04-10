@@ -54,7 +54,6 @@ fetch('https://dog.ceo/api/breeds/list/all')
       text = makeBreedText(breed, subbreed);
     }
     li.innerText = text
-    dogBreeds.push(text)
     dogBreedsUl.appendChild(li);
   }
 
@@ -74,11 +73,11 @@ function challenge4(){
     selected = event.target.value
     for (breed of dogBreeds){
       if(breed.startsWith(selected)){
-        emptyBreedsArray.push(breed)
+        emptyBreedsArray.pu
       }
     }
-    console.log(emptyBreedsArray)
-    listBreeds(emptyBreedsArray)
+    console.log(newBreedsArray)
+    listBreeds(newBreedsArray)
   })
 }
 
