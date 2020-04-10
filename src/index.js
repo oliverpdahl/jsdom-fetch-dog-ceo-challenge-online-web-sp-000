@@ -38,7 +38,7 @@ function challenge2(){
 
   function makeBreedLi(breed, subbreed){
     const li = document.createElement('li')
-    li.class = 'dog-breed-li'
+    li.id = 'dog-breed-li'
     if(subbreed != ''){
       li.innerText = makeBreedText(breed, subbreed);
     } else {
