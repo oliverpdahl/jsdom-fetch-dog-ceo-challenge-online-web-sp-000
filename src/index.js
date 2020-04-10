@@ -50,7 +50,7 @@ function challenge2(){
 
 function challenge3(){
   const li = document.getElementsByClassName('dog-breed-li');
-  console.log(li)
+  console.log(li.first)
   console.log(li[5])
   li.addEventListener('click', function(event){
     console.log('clicked')
