@@ -9,7 +9,6 @@ function challenge1(){
       img = document.createElement('img')
       img.src = url
       imageContainer.appendChild(img)
-      console.log(url)
     }
   })
 }
