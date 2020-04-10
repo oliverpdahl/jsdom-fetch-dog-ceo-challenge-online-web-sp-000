@@ -83,7 +83,7 @@ function challenge4(){
     selected = event.target.value
     for (breed of dogBreeds){
       if(breed.startsWith(selected)){
-        emptyBreedsArray.pu
+        emptyBreedsArray.push(breed)
       }
     }
     console.log(newBreedsArray)
