@@ -23,14 +23,14 @@ function challenge2(){
     breeds = json.message
     console.log(breeds)
     for (breed in breeds) {
-      const li = document.createElement('li')
       if (breeds[breed].length != 0){
         for (subbreed of breeds[breed]){
+          const li = document.createElement('li')
           li.innerText = makeBreedText(breed, subbreed);
           dogBreedsUl.appendChild(li);
         }
       } else {
-        console.log(breed)
+        const li = document.createElement('li')
         li.innerText = `${breed}`
         dogBreedsUl.appendChild(li);
       }
