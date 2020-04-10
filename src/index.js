@@ -1,4 +1,3 @@
-let message = {}
 function challenge1(){
   fetch("https://dog.ceo/api/breeds/image/random/4")
   .then(function(response){
@@ -21,9 +20,18 @@ function challenge2(){
   })
   .then(function(json){
     dogBreedsUl = document.getElementById('dog-breeds')
-    message = json.message
-    console.log(json.message)
+    breeds = json.message
+    for (breed in breeds) {
+      for (subbreed of breeds[breed]){
+        const li = makeBreedLi(breed, subbreed);
+        dogBreedsUl.appendChild(li);
+      }
+    }
   })
+
+  function makeBreedLi(breed, subbreed){
+    if
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
