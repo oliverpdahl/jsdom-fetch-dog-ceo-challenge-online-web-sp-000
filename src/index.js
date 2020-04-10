@@ -5,7 +5,7 @@ function challenge1(){
   })
   .this(function(json){
     console.log(json)
-  }_
+  })
 }
 
 document.addEventListener("DOMContentLoaded", () => {
