@@ -20,32 +20,49 @@ fetch('https://dog.ceo/api/breeds/list/all')
     return response.json()
   })
   .then(function(json){
-    dogBreedsUl = document.getElementById('dog-breeds')
     breeds = json.message
+    listBreeds();
   })
 
   function makeBreedText(breed, subbreed){
     return `${subbreed} ${breed}`
   }
 
-  function makeBreedArray(breed, subbreed){
-    const li = document.createElement('li')
-    li.className = 'dog-breed-li'
-    if(breed == 'australian'){
-      li.id = 'super-breed'
-    }
-    if(subbreed != ''){
-      text = makeBreedText(breed, subbreed);
-    } else {
-      text = `${breed}`
-    }
-    li.innerText = text
-    dogBreeds.push(text)
-    dogBreedsUl.appendChild(li);
-  }
+  // function makeBreedArray(breed, subbreed){
+  //   const li = document.createElement('li')
+  //   li.className = 'dog-breed-li'
+  //   if(breed == 'australian'){
+  //     li.id = 'super-breed'
+  //   }
+  //   if(subbreed != ''){
+  //     text = makeBreedText(breed, subbreed);
+  //   } else {
+  //     text = `${breed}`
+  //   }
+  //   li.innerText = text
+  //   dogBreeds.push(text)
+  //   dogBreedsUl.appendChild(li);
+  // }
 
   function listBreeds(breeds){
-
+    dogBreedsUl = document.getElementById('dog-breeds')
+    for (breed in breeds) {
+      if (breeds[breed].length != 0){
+        for (subbreed of breeds[breed]){
+          const li = document.createElement('li')
+          text = makeBreedText(breed, subbreed);
+          li.innerText = text
+          dogBreeds.push(text)
+          dogBreedsUl.appendChild(li);
+        }
+      } else {
+        const li = document.createElement('li')
+        text = `${breed}`
+        li.innerText = text
+        dogBreeds.push(text)
+        dogBreedsUl.appendChild(li);
+      }
+    }
   }
 
 function challenge3(){
