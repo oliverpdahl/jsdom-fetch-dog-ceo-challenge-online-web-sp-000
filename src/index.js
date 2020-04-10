@@ -39,6 +39,9 @@ function challenge2(){
   function makeBreedLi(breed, subbreed){
     const li = document.createElement('li')
     li.className = 'dog-breed-li'
+    if(breed == 'australian'){
+      li.id = 'super-breed'
+    }
     if(subbreed != ''){
       li.innerText = makeBreedText(breed, subbreed);
     } else {
