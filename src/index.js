@@ -52,7 +52,7 @@ function challenge2(){
 }
 
 function challenge3(){
-  li = document.getElementById('super-breed')
+  let li = document.getElementById('super-breed')
   li.addEventListener('click', function(event){
     console.log('clicked')
     chossenLi.style.color = "red";
