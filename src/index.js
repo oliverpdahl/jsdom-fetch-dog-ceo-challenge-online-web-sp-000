@@ -22,6 +22,7 @@ fetch('https://dog.ceo/api/breeds/list/all')
   .then(function(json){
     breeds = json.message
     listBreeds(breeds);
+    challenge3();
   })
 
   function makeBreedText(breed, subbreed){
@@ -74,7 +75,6 @@ function challenge4(){
 
 document.addEventListener("DOMContentLoaded", function() {
   challenge1();
-  challenge2();
   //challenge3(); CALLED IN challenge2
   challenge4();
 });
