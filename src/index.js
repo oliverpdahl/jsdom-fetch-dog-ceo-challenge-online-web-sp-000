@@ -62,7 +62,7 @@ function challenge3(){
 
 function challenge4(){
   selector = document.querySelector('select')
-  selector.addEventListener('change', function(event){
+  selector.onchange(function(event){
     console.log('changed')
   })
 }
