@@ -13,6 +13,16 @@ function challenge1(){
   })
 }
 
+function challenge2(){
+  fetch('https://dog.ceo/api/breeds/list/all')
+  .then(function(response){
+    return response.json()
+  })
+  .then(function(json){
+    console.log(json)
+  })
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   challenge1()
 });
