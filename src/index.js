@@ -24,5 +24,6 @@ function challenge2(){
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  challenge1()
+  challenge1();
+  challenge2();
 });
