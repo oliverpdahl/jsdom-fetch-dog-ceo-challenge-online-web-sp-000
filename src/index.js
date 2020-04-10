@@ -21,7 +21,7 @@ fetch('https://dog.ceo/api/breeds/list/all')
   })
   .then(function(json){
     breeds = json.message
-    listBreeds();
+    listBreeds(breeds);
   })
 
   function makeBreedText(breed, subbreed){
