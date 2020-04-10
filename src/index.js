@@ -15,8 +15,7 @@ function challenge1(){
   })
 }
 
-function challenge2(){
-  fetch('https://dog.ceo/api/breeds/list/all')
+fetch('https://dog.ceo/api/breeds/list/all')
   .then(function(response){
     return response.json()
   })
@@ -32,14 +31,13 @@ function challenge2(){
         makeBreedLi(breed, '')
       }
     }
-  challenge3();
   })
 
   function makeBreedText(breed, subbreed){
     return `${subbreed} ${breed}`
   }
 
-  function makeBreedLi(breed, subbreed){
+  function makeBreedArray(breed, subbreed){
     const li = document.createElement('li')
     li.className = 'dog-breed-li'
     if(breed == 'australian'){
@@ -54,6 +52,7 @@ function challenge2(){
     dogBreeds.push(text)
     dogBreedsUl.appendChild(li);
   }
+
 }
 
 function challenge3(){
