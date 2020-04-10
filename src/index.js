@@ -45,6 +45,7 @@ fetch('https://dog.ceo/api/breeds/list/all')
   function makeBreedLi(breed, subbreed, breeds){
     const li = document.createElement('li')
     if(breed == 'australian'){
+      console.log('in')
       li.id = 'super-breed'
     }
     if(subbreed == ''){
