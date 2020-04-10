@@ -1,5 +1,3 @@
-let dogBreeds = [];
-
 function challenge1(){
   fetch("https://dog.ceo/api/breeds/image/random/4")
   .then(function(response){
@@ -31,8 +29,12 @@ fetch('https://dog.ceo/api/breeds/list/all')
   }
 
   function setBreedsArray(){
+    dogBreedArray
     dogBreedLi = document.getElementsByClassName('dog-breed-li')
-    console.log(dogBreedLi)
+    for(breedli of dogBreedLi){
+      dogBreedArray.push(breedli.innerText)
+    }
+    return dogBreedArray
   }
 
   function listBreeds(breeds){
