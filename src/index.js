@@ -30,6 +30,7 @@ function challenge2(){
         makeBreedLi(breed, '')
       }
     }
+  challenge3();
   })
 
   function makeBreedText(breed, subbreed){
