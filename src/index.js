@@ -67,14 +67,14 @@ function challenge3(){
 }
 
 function challenge4(){
-  newBreedsArray = []
+
   selector = document.querySelector('select')
   selector.addEventListener('change', function(event){
-    newBreedsArray = []
+    newBreedsArray = [...dogBreeds]
+    emptyBreedsArray = []
     selected = event.target.value
     for (breed of dogBreeds){
       if(breed.startsWith(selected)){
-        newBreedsArray.push(breed)
       }
     }
     console.log(newBreedsArray)
