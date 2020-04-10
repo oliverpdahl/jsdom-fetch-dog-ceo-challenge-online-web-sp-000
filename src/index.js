@@ -72,7 +72,7 @@ function challenge4(){
     selected = event.target.value
     newBreedsArray = []
     for (breed of dogBreeds){
-      console.log(dogBreeds)
+      console.log(breed)
     }
   })
 }
