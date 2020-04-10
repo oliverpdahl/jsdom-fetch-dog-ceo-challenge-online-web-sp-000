@@ -77,8 +77,8 @@ function challenge4(){
         emptyBreedsArray.push(breed)
       }
     }
-    console.log(newBreedsArray)
-    listBreeds(newBreedsArray)
+    console.log(emptyBreedsArray)
+    listBreeds(emptyBreedsArray)
   })
 }
 
