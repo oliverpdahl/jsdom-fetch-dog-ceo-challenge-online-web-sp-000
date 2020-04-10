@@ -49,7 +49,7 @@ function challenge2(){
 }
 
 function challenge3(){
-  const li = document.getElementsByClassName('dog-breed-li');
+  const li = document.getElementsByClassName('dog-breed-li')[5];
   li.addEventListener('click', function(event){
     console.log('clicked')
     chossenLi.style.color = "red";
