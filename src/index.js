@@ -49,10 +49,9 @@ function challenge2(){
 }
 
 function challenge3(){
-  allBreedLi = document.getElementsByClassName('dog-breed-li')
-  console.log(allBreedLi)
-  chossenLi = allBreedLi[5]
-  console.log(chossenLi)
+  const allBreedLi = document.getElementsByClassName('dog-breed-li')
+  let chossenLi = allBreedLi[5]
+  console.log(chossenLi.innerText)
   chossenLi.addEventListener('click', function(){
     console.log('clicked')
     chossenLi.style.color = "red";
