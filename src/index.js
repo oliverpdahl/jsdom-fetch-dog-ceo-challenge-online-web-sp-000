@@ -25,21 +25,28 @@ function challenge2(){
     for (breed in breeds) {
       if (breeds[breed].length != 0){
         for (subbreed of breeds[breed]){
-          const li = document.createElement('li')
-          li.innerText = makeBreedText(breed, subbreed);
-          dogBreedsUl.appendChild(li);
+
         }
       } else {
         const li = document.createElement('li')
-        li.innerText = `${breed}`
+
         dogBreedsUl.appendChild(li);
       }
-
     }
   })
 
   function makeBreedText(breed, subbreed){
     return `${subbreed} ${breed}`
+  }
+
+  make makeBreedLi(breed, subbreed){
+    const li = document.createElement('li')
+    if(subbreed != ''){
+      li.innerText = makeBreedText(breed, subbreed);
+    } else {
+      li.innerText = `${breed}`
+    }
+    dogBreedsUl.appendChild(li);
   }
 }
 
