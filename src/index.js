@@ -95,7 +95,7 @@ function challenge4(){
       }
     }
     console.log(emptyBreedsArray)
-    listBreeds(emptyBreedsArray)
+    listBreedsFromArray(emptyBreedsArray)
   })
 }
 
