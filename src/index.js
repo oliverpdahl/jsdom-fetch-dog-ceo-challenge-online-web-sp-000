@@ -39,6 +39,7 @@ function challenge2(){
 
   function makeBreedLi(breed, subbreed){
     const li = document.createElement('li')
+    li.class = 'dog-breed-li'
     if(subbreed != ''){
       li.innerText = makeBreedText(breed, subbreed);
     } else {
@@ -46,6 +47,10 @@ function challenge2(){
     }
     dogBreedsUl.appendChild(li);
   }
+}
+
+function challenge3(){
+  list = document.getElementById('dog-breeds')
 }
 
 document.addEventListener("DOMContentLoaded", () => {
